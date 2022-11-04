@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #06283d ;
+    display: flex;
+    height: 80vh;
+    color: #2e8baa ;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+.container{
+    padding: 5rem;
+    position: relative;
+    width: 35rem;
+    height: 40rem;
+}
+.graf{
+    fill: transparent;
+    stroke: #2e8baa;
+    stroke-width: 0.3rem;
+}
+h1{
+    margin-top: 4rem;
+}
+
+.item{
+    display: none;
+}
+
+#wrongLetters{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    position: absolute;
+    margin-top: 1.2rem;
+    font-size: 20px;
+    right: 1px;
+    top: 60px;
+}
+#wrongLetters h3{
+    font-size: 20px;
+    margin: 10px;
+    color: yellowgreen;
+}
+
+#wrongLetters span{
+    font-size: 25px;
+    color: yellowgreen;
+}
+
+#word{
+    display: flex;
+    margin-top: 2rem;
+    font-size: 45px;
+    letter-spacing: 5px;
+    align-items: center; 
+    margin-left: 8rem;
+    color: yellowgreen;
+}
+.letter{ 
+    margin: 0px 3px;
+    border-bottom: 2px solid #2e8baa;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+}
+#popup-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+   /* display: flex;*/
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popup{
+    background-color: yellowgreen;
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#btn{
+    margin-top: 1rem;
+    background-color: #2e8baa;
+    padding: 0.5rem 2rem;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#btn:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #25738e;
+}
+
+#error{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 50px;
+    position: absolute;
+    top: -50px;
+    transition: transform 0.4s ease-in-out;
+    color: yellowgreen;
+}
+#error.show{
+    transform: translateY(70px);
+}     
+
+.hint p{
+    border: 2px solid yellowgreen;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+  
+}
+.hint h2{
+    color: yellowgreen;
+}
+
+.hint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 4rem;
+    top: 9rem;
+}
